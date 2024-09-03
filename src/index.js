@@ -67,4 +67,3 @@ console.log(`Saldo: ${resultado.saldo}, Rank: ${resultado.rank}`);
 
 
 
-}

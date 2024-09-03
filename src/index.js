@@ -1,13 +1,14 @@
-function calcularRank(vitorias, derrotas){
+function calcularRank(vitorias, derrotas) {
 
-    let saldo = vitorias - Derrotas;
+    let saldo = vitorias - derrotas;
 
+    
     let rank;
     if (vitorias <= 10) {
         rank = "Ferro";
     } else if (vitorias <= 20) {
         rank = "Bronze";
-    } else if (vitorias <= 50){
+    } else if (vitorias <= 50) {
         rank = "Prata";
     } else if (vitorias <= 80) {
         rank = "Ouro";
@@ -25,6 +26,8 @@ function calcularRank(vitorias, derrotas){
     };
 }
         
+let resultado = calcularRank (97, 23);
+console.log(`Saldo: ${resultado.saldo}, Rank: ${resultado.rank}`);
 
 
 

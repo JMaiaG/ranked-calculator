@@ -4,17 +4,17 @@ function calcularRank(vitorias, derrotas) {
 
     
     let rank;
-    if (vitorias <= 10) {
+    if (saldo <= 10) {
         rank = "Ferro";
-    } else if (vitorias <= 20) {
+    } else if (saldo <= 20) {
         rank = "Bronze";
-    } else if (vitorias <= 50) {
+    } else if (saldo <= 50) {
         rank = "Prata";
-    } else if (vitorias <= 80) {
+    } else if (saldo <= 80) {
         rank = "Ouro";
-    } else if (vitorias <=90) {
+    } else if (saldo <= 90) {
         rank = "Diamante";
-    } else if (vitorias <= 100) {
+    } else if (saldo <= 100) {
         rank = "Lendário";
     } else {
         rank = "Imortal";
@@ -26,7 +26,7 @@ function calcularRank(vitorias, derrotas) {
     };
 }
         
-let resultado = calcularRank (97, 23);
+let resultado = calcularRank (40, 10);
 console.log(`Saldo: ${resultado.saldo}, Rank: ${resultado.rank}`);
 
 
